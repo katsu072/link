@@ -4,6 +4,7 @@ const profile = {
   bio: 'Все мои ссылки — в одном месте.',
   links: {
     telegram: 'https://t.me/skyseksi',
+    telegramChannel: 'https://t.me/katsu4e',
     vk: 'https://vk.com/ravage45',
     discord: 'https://discord.com/users/612478099048759310',
     tiktok: 'https://www.tiktok.com/@k4tsu72',
