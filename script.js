@@ -7,6 +7,7 @@ const profile = {
     vk: 'https://vk.com/ravage45',
     discord: 'https://discord.com/users/612478099048759310',
     tiktok: 'https://www.tiktok.com/@k4tsu72',
+    steam: 'https://steamcommunity.com/id/katsu404/',
   },
 };
 
