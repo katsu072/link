@@ -8,25 +8,25 @@
     <title>katsu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://r2.fakecrime.bio/assets/fonts/unbounded.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
     <main class="page">
-      <div class="ambient ambient-one"></div>
-      <div class="ambient ambient-two"></div>
+      <div class="tv-overlay" aria-hidden="true"></div>
+      <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="https://r2.fakecrime.bio/backgrounds/35a3424b-f435-40ef-bc72-53909dccf4fa.mp4" type="video/mp4" />
+      </video>
+      <div class="background-shade"></div>
       <section class="card" aria-labelledby="page-title">
         <div class="profile">
-          <img class="avatar" src="./avatar.jpg" alt="Аватар katsu" />
+          <img class="avatar" src="https://r2.fakecrime.bio/avatars/b0d0493e-d1de-40ef-bc0c-3c07805ee16d.gif" alt="Аватар katsu" />
           <div class="identity">
-            <p class="eyebrow">PERSONAL PAGE</p>
             <h1 id="page-title">katsu</h1>
-            <p class="status"><span></span> online</p>
           </div>
         </div>
 
-        <div class="divider"><span>FIND ME</span></div>
         <nav class="links" aria-label="Мои ссылки">
           <a class="link telegram" href="https://t.me/skyseksi" target="_blank" rel="noopener noreferrer">
             <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.4 4.6 18.2 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.6 13.6.7 12c-1.1-.3-1.1-1 .2-1.5L20 3c.9-.3 1.7.2 1.4 1.6Z"/></svg></span>
@@ -39,7 +39,7 @@
             <span class="arrow" aria-hidden="true">↗</span>
           </a>
         </nav>
-        <footer><span class="footer-dot"></span> katsu <span class="footer-separator">·</span> <span data-year></span></footer>
+        <footer><span class="footer-dot"></span> katsu</footer>
       </section>
     </main>
   </body>
