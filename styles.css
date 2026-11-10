@@ -39,7 +39,7 @@ body { min-width: 320px; min-height: 100vh; margin: 0; }
   z-index: 2;
   animation: appear .55s cubic-bezier(.2,.75,.25,1) both;
 }
-.profile { display: flex; align-items: center; gap: 28px; margin-bottom: 28px; }
+.profile { display: flex; align-items: center; gap: 28px; margin-bottom: 17px; }
 .avatar {
   display: block;
   flex: 0 0 auto;
@@ -60,20 +60,19 @@ h1 { margin: 0; font-size: clamp(22px, 4vw, 26px); font-weight: 600; letter-spac
 .links { display: grid; gap: 10px; }
 .link {
   display: flex;
-  width: fit-content;
-  min-width: 220px;
-  min-height: 42px;
+  width: min(100%, 360px);
+  min-height: 52px;
   align-items: center;
-  gap: 12px;
-  padding: 0 10px;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+  gap: 13px;
+  padding: 0 14px;
+  border: 1px solid #ffffff15;
+  border-radius: 8px;
+  background: #ffffff06;
   color: #f3f1ee;
   text-decoration: none;
   transition: transform .2s ease, background .2s ease, border-color .2s ease;
 }
-.link:hover { transform: translateY(-1px); color: #fff; }
+.link:hover { transform: translateY(-1px); border-color: #ffffff35; background: #ffffff0d; color: #fff; }
 .link:focus-visible { outline: 2px solid #d8c7a6; outline-offset: 3px; }
 .link-icon { display: grid; width: 20px; height: 20px; flex: 0 0 auto; place-items: center; color: #d9d5ce; }
 .link-icon svg { width: 20px; height: 20px; fill: currentColor; }
@@ -84,5 +83,5 @@ h1 { margin: 0; font-size: clamp(22px, 4vw, 26px); font-weight: 600; letter-spac
 .link:hover .arrow { transform: translate(2px, -2px); color: #e2ddd4; }
 footer { display: none; }
 @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 600px) { .page { padding: 20px 14px; } .card { min-height: 0; padding: 25px 21px; } .avatar { width: 74px; height: 74px; border-radius: 22px; } .profile { gap: 17px; margin-bottom: 20px; } .link { width: 100%; } }
+@media (max-width: 600px) { .page { padding: 20px 14px; } .card { min-height: 0; padding: 25px 21px; } .avatar { width: 74px; height: 74px; border-radius: 22px; } .profile { gap: 17px; margin-bottom: 16px; } .link { width: 100%; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
