@@ -6,36 +6,71 @@
     <meta name="theme-color" content="#090909" />
     <meta name="description" content="Ссылки katsu" />
     <title>katsu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&amp;display=swap" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main class="page">
       <div class="tv-overlay" aria-hidden="true"></div>
-      <video class="background-video" autoplay muted loop playsinline preload="none" aria-hidden="true">
-        <source src="https://r2.fakecrime.bio/backgrounds/35a3424b-f435-40ef-bc72-53909dccf4fa.mp4" type="video/mp4" />
-      </video>
+      <button class="unlock" type="button"><span><s>Unlock</s></span></button>
+      <img class="background-video" src="https://i.pinimg.com/originals/e3/77/5c/e3775cd1332f5d71255f61633b9ffd01.gif" alt="" aria-hidden="true" />
       <div class="background-shade"></div>
       <section class="card" aria-labelledby="page-title">
         <div class="profile">
           <img class="avatar" src="./avatar.jpg" alt="Аватар katsu" />
           <div class="identity">
-            <h1 id="page-title">katsu</h1>
+            <h1 id="page-title"><span>katsu</span><img class="name-crown" src="https://img.icons8.ru/?size=100&amp;id=12566&amp;format=png&amp;color=FFFFFF" alt="Корона" width="22" height="22" /></h1>
+            <div class="tags" aria-label="Теги">
+              <span class="tag">sexy</span>
+              <span class="tag">u god</span>
+              <span class="tag" lang="ko">죽어라</span>
+            </div>
           </div>
         </div>
 
-        <nav class="links" aria-label="Мои ссылки">
-          <a class="link telegram" href="https://t.me/skyseksi" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.4 4.6 18.2 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.6 13.6.7 12c-1.1-.3-1.1-1 .2-1.5L20 3c.9-.3 1.7.2 1.4 1.6Z"/></svg>
-            <span>Telegram</span>
-            <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="link steam" href="https://steamcommunity.com/id/katsu404/" target="_blank" rel="noopener noreferrer" aria-label="Steam">
-            <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-9.9 8.6l5.4 2.2a3.2 3.2 0 0 1 1.8-.5l2.4-3.5v-.1a4.2 4.2 0 1 1 4.2 4.2h-.1l-3.5 2.5a3.2 3.2 0 0 1-6.3.8l-3.9-1.6A10 10 0 1 0 12 2Zm6 6.7a2.5 2.5 0 1 0-2.5 2.5A2.5 2.5 0 0 0 18 8.7ZM9.8 17.9a1.8 1.8 0 0 0 3.4-.8 1.8 1.8 0 0 0-3.4-.8l-2-.8a2 2 0 0 0 2 1.6Z"/></svg>
-            <span>Steam</span>
-            <span class="arrow" aria-hidden="true">↗</span>
-          </a>
-        </nav>
+        <div class="social-cards" aria-label="Мои профили">
+          <article class="social-card">
+            <img class="social-avatar" src="https://distribution.faceit-cdn.net/images/ac07e25f-14f9-4b7c-b3a3-784144127277.jpg" alt="Аватар Discord" loading="lazy" referrerpolicy="no-referrer" />
+            <div class="social-identity">
+              <div class="discord-name-row">
+                <h2 class="discord-name">katsu</h2>
+                <span class="clan-tag"><span class="clan-icon" aria-hidden="true">🗡️</span> ПИВО</span>
+              </div>
+              <span class="social-platform">Discord</span>
+            </div>
+            <a class="profile-button" href="https://discord.com/users/612478099048759310" target="_blank" rel="noopener noreferrer" aria-label="Открыть профиль Discord">Profile</a>
+          </article>
+          <article class="social-card">
+            <img class="social-avatar" src="https://avatars.yandex.net/get-music-content/15042045/23f94e36.p.18294809/1000x1000" alt="Аватар Telegram" loading="lazy" referrerpolicy="no-referrer" />
+            <div class="social-identity">
+              <h2>@skyseksi</h2>
+              <span class="social-platform">Telegram</span>
+            </div>
+            <a class="profile-button" href="https://t.me/skyseksi" target="_blank" rel="noopener noreferrer" aria-label="Открыть профиль Telegram">Profile</a>
+          </article>
+          <article class="social-card">
+            <img class="social-avatar" src="https://avatars.yandex.net/get-music-content/8096180/ccf6cbba.a.24772820-1/m1000x1000" alt="Аватар Steam" loading="lazy" referrerpolicy="no-referrer" />
+            <div class="social-identity">
+              <h2>katsu404</h2>
+              <span class="social-platform">Steam</span>
+            </div>
+            <a class="profile-button" href="https://steamcommunity.com/id/katsu404/" target="_blank" rel="noopener noreferrer" aria-label="Открыть профиль Steam">Profile</a>
+          </article>
+        </div>
       </section>
     </main>
+    <aside class="music-player" aria-label="Музыкальный плеер" hidden>
+      <div class="music-details" id="music-details" hidden>
+        <img class="music-cover" src="https://r2.fakecrime.bio/tracks/covers/f72db6f9-9eb1-4876-83ea-f4acc0edb5b8.png" alt="" />
+        <span class="track-name">never enough</span>
+        <button class="play-toggle" type="button" aria-label="Приостановить музыку">Ⅱ</button>
+        <input class="volume" type="range" min="0" max="1" step="0.01" value="0.1" aria-label="Громкость" />
+      </div>
+      <button class="music-toggle" type="button" aria-label="Открыть музыкальный плеер" aria-expanded="false" aria-controls="music-details">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="5" height="18" rx="1"/><rect x="14" y="3" width="5" height="18" rx="1"/></svg>
+      </button>
+      <audio id="music" loop preload="none" src="https://r2.fakecrime.bio/tracks/audios/e8424a0e-ef8a-4d3b-b6e7-f008f8eb0bba.mp3"></audio>
+    </aside>
   </body>
 </html>
